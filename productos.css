@@ -1,0 +1,119 @@
+ *{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+ }
+
+ .contenedor{
+    display: grid;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-gap:40px ;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10rem 2rem  15rem 15rem 15rem; 
+    grid-template-areas: "header header"
+                         "menu menu" 
+                         "manis mani"
+                         "monketella monketellas"
+                         "almendras almond"
+}
+
+ /*----------titulo--------*/
+
+ h1{
+  font-size: 5rem;
+  font-style: italic;
+  text-align: left;
+  background: brown;
+ }
+
+
+ h2{
+ font-style: italic;
+ font-size: 2rem;
+ text-align: left;
+ background: brown;
+}
+
+
+ /*------------header--------*/
+
+ header{
+  grid-area:header ;
+ }  
+
+ /*-----------menu-----------*/
+
+ .menu{
+  grid-area:menu;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1rem;
+ }
+
+
+ /*------------productos--------*/
+
+   .productos{
+    font-size: 1.5rem;
+    text-align:flex;
+    font-style: italic;
+    
+   }
+
+  .mani{
+    grid-area:mani ;
+    background-color: brown;
+    border-radius: 25% 10%;
+   }
+  
+  .monketella{
+    grid-area:monketella ;
+    background-color: brown;
+    border-radius: 25% 10%;
+   }
+  
+  .almond{
+    grid-area:almond;
+    background-color: brown;
+    border-radius: 25% 10%;
+   }
+  
+ /*--------------imagen-------------*/
+
+ 
+ .mani-imagen{
+  grid-area:manis ;
+  width:400px;
+  height:250px ;
+}
+
+ .nutella{
+  grid-area:monketellas ;
+  width: 400px;
+  height: 280px;
+}
+
+ .almendras{
+  grid-area:almendras;
+  width: 300px;
+  height: 250px;
+}
+
+
+/*----------------footer----------------------*/
+
+footer{
+  
+  border-top: 3px solid black;
+  margin-bottom: 3px solid black ;
+  text-align: center;
+} 
